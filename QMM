@@ -1,0 +1,165 @@
+QMM ASSIGNMENT
+---
+title: '*Assignment 1 *'
+author: '*Name : Srinivasarao Madala*'
+date: "2023-09-08"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+*Question 1*
+
+*1.Define the decision Variables.*
+
+The decision variables are Number of Collegiate(W_c) and Mini backpacks(W_m) generated per week 
+
+  $$ The \hspace{.2cm}number \hspace{.2cm}of \hspace{.2cm}Collegiate \hspace{.2cm}Backpacks  = W_c           $$ 
+  
+  $$ The \hspace{.2cm}number \hspace{.2cm}of \hspace{.2cm}Minis\hspace{.2cm} Backpacks= W_m           $$
+  
+  $$ The \hspace{.2cm}Total \hspace{.2cm}Profit = T_P   $$
+  
+*2.What is Objective function?*
+
+
+The objective function is to maximize profit.So W_c makes Profit of 32 dollars and W_m Generates Profit of 24 dollars
+
+$$     Max \hspace{.5cm}  z= 32W_c+24W_m    $$
+
+*3.What are the Constraints?*
+
+ *Material Constraint:* 
+ 
+ Bank savers receive a nylon fabric of 5000 sq.ft
+ 
+ 3Sq.ft Nylon fabric needed for W_c
+ 
+ 2Sq_ft needed for W_m
+ 
+ $$ 3W_c+2W_m \le 5000   $$
+*Time Constraint:*
+
+35 Employees works 40hours per week
+
+W_c Requires 45minutes of labor to generate Profit of 32$ and W_m Requires 40minutes to earn profit of 25$ 
+
+$$ 45W_c+40W_m \le 35Employees*40hours*60mintues  $$
+ * Non-Negativity Constraint: *
+ $$ 0 \le W_c \le 1000 $$
+ $$ 0 \le W_m \le 1200 $$
+ 
+ *4.Write Down the full Mathematical formulation of this LP Problem?*
+ 
+$$ W_c = Number \hspace{.2cm}of \hspace{.2cm}collegiate \hspace{.2cm}backpacks \hspace{.2cm}per \hspace{.2cm}week $$
+ 
+ $$ W_m = Number \hspace{.2cm}of \hspace{.2cm}Mini \hspace{.2cm}backpacks \hspace{.2cm}per \hspace{.2cm}week $$
+ 
+ $$  Max  \hspace{.3cm}= 32W_c+24W_m $$ 
+ 
+ Subject to
+ 
+$$ W_c \le 1000 \hspace{.2cm}Collegiates \hspace{.2cm}sold \hspace{.2cm}per \hspace{.2cm}week $$
+ 
+ $$ W_m  \le 1200 \hspace{.2cm}Minis \hspace{.2cm}Sold \hspace{.2cm}per \hspace{.2cm}week $$
+ 
+ $$ 45W_c+40W_m \le 84000 \hspace{.1cm} minutes \hspace{.1cm} per \hspace{.1cm} week \hspace{.1cm} (35employees*40 hours*60minutes)  $$
+ 
+$$ 3W_c+2W_m=5000sq.ft  \hspace{.1cm} of \hspace{.1cm} material \hspace{.1cm} required \hspace{.1cm} per \hspace{.1cm} week $$
+
+
+*Question 2 :*
+
+*1.Define the Decision Variables.*
+
+The number of units of the new Product , regardless of the size , that should be produced on each plant to maximize the profit of the weight corporation. 
+
+Note:
+
+$$ N_p = Number \hspace{.1cm} of \hspace{.1cm} units\hspace{.1cm} produced \hspace{.1cm} on \hspace{.1cm} each \hspace{.1cm} plant $$ 
+
+i.e, 
+
+p = 1(Plant1),2(Plant2),3(plant3).
+
+$$ L ,M , S = Product's \hspace{.2cm} Size $$
+$$ Where\hspace{.2cm} L = Large , M = Medium , S = Small  $$
+
+*Decision Variables :* 
+
+$$ N_pL = No.of \hspace{.2cm} Large \hspace{.2cm} sized \hspace{.2cm} items \hspace{.2cm} produced \hspace{.2cm}on \hspace{.2cm} plant \hspace{.2cm} P  $$
+$$ N_pM = No.of \hspace{.2cm} Medium \hspace{.2cm}sized \hspace{.2cm}items \hspace{.2cm}produced \hspace{.2cm}on \hspace{.2cm}plant \hspace{.2cm}P  $$
+$$ N_pS = No.of \hspace{.2cm} Small \hspace{.2cm}sized \hspace{.2cm}items \hspace{.2cm}produced \hspace{.2cm}on \hspace{.2cm}plant \hspace{.2cm}P $$
+
+*B.Formulate a Linear Programming for this Problem:*
+
+$$ N_pL = No.of \hspace{.2cm} Large \hspace{.2cm} sized \hspace{.2cm} items \hspace{.2cm} produced \hspace{.2cm}on \hspace{.2cm} plant \hspace{.2cm} P  $$
+
+$$ N_pM = No.of \hspace{.2cm} Medium \hspace{.2cm}sized \hspace{.2cm}items \hspace{.2cm}produced \hspace{.2cm}on \hspace{.2cm}plant \hspace{.2cm}P  $$
+
+$$ N_pS = No.of \hspace{.2cm} Small \hspace{.2cm}sized \hspace{.2cm}items \hspace{.2cm}produced \hspace{.2cm}on \hspace{.2cm}plant \hspace{.2cm}P $$
+
+
+*Where* 
+
+$$ P = 1(Plant 1),2(Plant 2) , 3(Plant 3) $$
+
+ *Maximize Profit:*  
+
+ $$  Max \hspace{.3cm} Z = 420(N_1L+N_2L+N_3L)+360(N_1M+N_2M+N_3M)+300(N_1S+N_2S+N_3S)  $$ 
+ 
+
+*Constraints:*
+
+Total Number of Size's units Produced regardless the plant:
+
+
+$$  L = N_1L+N_2L+N_3L  $$
+
+$$ M = N_1M+N_2M+N_3M   $$
+
+
+
+$$ S = N_1S+N_2S+N_3S   $$ 
+
+
+Production Capacity per unit by plant each day
+i.e,
+
+$$  Plant \hspace{.1cm}1 = N_1L+N_1M+N_1S \le 750  $$
+
+$$  Plant \hspace{.1cm}2 = N_2L+N_2M+N_2S  \le 900  $$
+
+$$  Plant \hspace{.1cm}3 = N_3L+N_3M+N_3S  \le 450  $$
+
+*Storage capacity per unit by plant each day:*
+
+$$ Plant \hspace{.2cm} 1 = 20N_1L+15N_1M+12N_1S \le 13000 $$
+$$  Plant \hspace{.2cm} 2 = 20N_2L+15N_2M+12N_2S \le 12000 $$
+$$  Plant \hspace{.2cm} 3 = 20N_3L+15N_3M+12N_3S \le 5000 $$ 
+*Sales Forecast per day*
+
+$$ L = N_1L+N_2L+N_3L \le 900  $$
+
+$$  M = N_1M+N_2M+N_3M \le 1200  $$
+
+$$ S = N_1S+N_2S+N_3S \le 750  $$ 
+
+
+The Plants always utilize the same % of their excess capacity to produce the new product.
+
+$$ \frac  {N_1L+N_1M+N_1S} {750} = \frac {N_2L+N_2M+N_2S} {900} = \frac {N_3L+N_3M+N_3S}  {450}  $$
+*It Can be Denoted as :* 
+
+a) $$ 900(N_1L+N_1M+N_1S)-750(N_2L+N_2M+N_2S) = 0  $$
+
+b) $$ 450(N_2L+N_2M+N_2S)-900(N_3L+N_3M+N_3S) = 0 $$
+
+c) $$ 450(N_1L+N_1M+N_1S)-750(N_3L+N_3M+N_3S) = 0 $$
+
+
+*All Values Must be greater or equal to zero* 
+
+$$ L , M \hspace{.3cm} and \hspace{.3cm}S \ge 0 $$ 
+
+$$ N_PL , N_PM , N_PS \ge 0  $$
